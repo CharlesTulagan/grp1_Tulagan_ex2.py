@@ -6,7 +6,7 @@ int_num1 = 30
 int_num2 = 3
 
 # Define two float variables
-float_num1 = 15.10g
+float_num1 = 15.10
 float_num2 = 3.2
 
 # Define two complex variables
