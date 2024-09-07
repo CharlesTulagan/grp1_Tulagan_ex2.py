@@ -1,72 +1,48 @@
-# task 1: Arithmetic Operations
-print("\ntask 1: Arithmetic Operations")
+# 1. Calculate the length of a string
+string = "hello"
+length_of_string = len(string)
+print("Length of 'hello':", length_of_string)
 
-# Define two integer variables
-int_num1 = 30
-int_num2 = 3
+# 2. Count the number of characters in a string
+char_count = len(string)
+print("Number of characters in 'hello':", char_count)
 
-# Define two float variables
-float_num1 = 15.10
-float_num2 = 3.2
+# 3. Replace all occurrences of the first character with '$', except the first character itself
+def replace_first_char(string):
+    first_char = string[0]
+    modified_string = first_char + string[1:].replace(first_char, '$')
+    return modified_string
 
-# Define two complex variables
-complex_num1 = 10 + 3j
-complex_num2 = 2 + 1j
+string_to_modify = "hello"
+print("String after replacing first char occurrences:", replace_first_char(string_to_modify))
 
-# Perform arithmetic operations for int variables
-print("Integer Arithmetic Operations:")
-print("Addition:", int_num1 + int_num2)
-print("Subtraction:", int_num1 - int_num2)
-print("Multiplication:", int_num1 * int_num2)
-print("Division:", int_num1 / int_num2)
-print("Modulus:", int_num1 % int_num2)
-print("Exponent:", int_num1 ** int_num2)
+# 4. Swap the first two characters of two strings and concatenate them
+def swap_first_two_chars(string1, string2):
+    swapped_string1 = string2[:2] + string1[2:]
+    swapped_string2 = string1[:2] + string2[2:]
+    return swapped_string1 + " " + swapped_string2
 
-# Perform arithmetic operations for float variables
-print("\nFloat Arithmetic Operations:")
-print("Addition:", float_num1 + float_num2)
-print("Subtraction:", float_num1 - float_num2)
-print("Multiplication:", float_num1 * float_num2)
-print("Division:", float_num1 / float_num2)
-print("Modulus:", float_num1 % float_num2)
-print("Exponent:", float_num1 ** float_num2)
+string1 = "Hello"
+string2 = "World"
+result = swap_first_two_chars(string1, string2)
+print("Swapped and concatenated:", result)
 
-# Perform arithmetic operations for complex variables
-print("\nComplex Arithmetic Operations:")
-print("Addition:", complex_num1 + complex_num2)
-print("Subtraction:", complex_num1 - complex_num2)
-print("Multiplication:", complex_num1 * complex_num2)
-print("Division:", complex_num1 / complex_num2)
-print("Modulus:", abs(complex_num1))  # Note: Modulus for complex numbers is the absolute value
-print("Exponent:", complex_num1 ** complex_num2)
+# 5. Concatenate five variables with spaces
+var1 = "A"
+var2 = "python"
+var3 = "is"
+var4 = "a language"
+concatenated_string = var1 + " " + var2 + " " + var3 + " " + var4
+print("Concatenated strings:", concatenated_string)
 
+# 6. Concatenate two user input strings
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+concatenated_input_string = string1 + " " + string2
+print("User concatenated strings:", concatenated_input_string)
 
-
-
-
-#task 2:  Integers Literals with Underscores
-print("\ntask 2: Integers Literals with Undersocres")
-
-# Create two variables, num1 and num2
-num1 = 25_000_000
-num2 = 25000000
-
-# Print num1 and num2 on two separate lines
-print(num1)
-print(num2)
-
-
-
-
-
-#task 3: Data types
-print("\n task 3: Data types")
-# Create int, float, and complex variables
-int_var = 30
-float_var = 15.10
-complex_var = 20 + 5j
-
-# Check the type of each variable
-print("Type of int_var:", type(int_var))
-print("Type of float_var:", type(float_var))
-print("Type of complex_var:", type(complex_var))
+# 7. Concatenate your name and age in a paragraph
+name = "Charles Tulagan"
+age = 22
+paragraph = "My name is " + name + " and I am " + str(age) + " years old."
+print(paragraph)
